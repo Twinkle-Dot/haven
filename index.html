@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haven &mdash; Family-friendly Fun</title>
+
+    <!-- Tailwind Css -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e3a08b5aeb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript -->
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+
+    <div class="bg-brandOrange text-pureWhite">
+
+      <nav
+      class="navbar relative reg-container pt-6 pb-0 flex items-center justify-between"
+      >
+      <span class="font-shrikh text-3xl md:text-5xl">Haven</span>
+      <div
+      class="hidden space-x-6 font-fred font-semibold text-lg md:flex tracking-wider"
+      >
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#playground" class="nav-link">Playground</a>
+        <a href="#workshop" class="nav-link">Workshop</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      
+      <!-- Hamburger Icon -->
+      <div class="md:hidden hamburger relative -top-2.5">
+        <span class="hamburger-tp ease-in-out duration-300"></span>
+        <span class="hamburger-md ease-in-out duration-700"></span>
+        <span class="hamburger-bt ease-in-out duration-300"></span>
+      </div>
+      
+      <!-- Menu -->
+      <div class="hamburger-menu flex flex-col space-y-6 md:hidden items-end justify-around">
+          <a href="#hero" class="nav-link mt-16">Home</a>
+          <a href="#playground" class="nav-link">Playground</a>
+          <a href="#workshop" class="nav-link">Workshop</a>
+          <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero"></section>
+    <div
+      class="reg-container flex-col-reverse space-y-0 flex items-center justify-center bg-brandOrange text-pureWhite md:flex-row md:justify-between"
+    >
+      <!-- Left Item -->
+      <div
+        class="flex-col space-y-0 text-center  mt-12 md:mt-0 md:justify-between md:w-1/2 md:text-left"
+      >
+        <h1
+          class="mx-auto text-2xl md:text-4xl lg:text-7xl font-bold mb-4 md:mr-6"
+        >
+          Family-Friendly Fun
+        </h1>
+        <p class="mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          vulputate venenatis arcu nec finibus. Duis sed porttitor dolor. Ut
+          vel.
+        </p>
+        <div class="text-brandOrange pt-8">
+          <button class="btn-primary w-32 md:w-40 hover:text-pureWhite">
+            <a
+              href="#workshop"
+              class="learn-btn font-semibold text-lg md:text-xl tracking-wider"
+              >Learn More</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Item -->
+      <div class="lg:m-w-md">
+        <img src="images/hero.png" alt="" />
+      </div>
+    </div>
+
+    <section id="playground" class="relative">
+      <div class="reg-container bg-pastelBlue">
+        <!-- Title -->
+        <h2 class="text-dirtyBlue heading-secondary">Playground</h2>
+
+        <!-- Background Image -->
+        <div class="absolute top-10 right-0 hidden md:block">
+          <img src="images/bg-playground.png" alt="" />
+        </div>
+
+        <!-- Card Flex -->
+        <div
+          class="flex flex-col space-y-6 md:space-x-6 items-center justify-between md:justify-around md:flex-row md:items-end"
+        >
+          <!-- Card -->
+          <div
+            class="card overflow-hidden bg-pureWhite w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80"
+          >
+            <div class="mb-3 md:mb-8 overflow-hidden">
+              <img
+                src="images/card-1.jpg"
+                alt=""
+                class="card-image ease-in-out duration-200"
+              />
+            </div>
+            <h3
+              class="text-funGreen font-bold text-base md:text-xl lg:text-2xl tracking-wider"
+            >
+              Team Games
+            </h3>
+          </div>
+          <div
+            class="card overflow-hidden bg-pureWhite w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80"
+          >
+            <div class="mb-3 md:mb-8 overflow-hidden">
+              <img
+                src="images/card-2.jpg"
+                alt=""
+                class="card-image ease-in-out duration-200"
+              />
+            </div>
+            <div>
+              <h3
+                class="text-washedBlue font-bold text-base md:text-xl lg:text-2xl tracking-wider"
+              >
+                Brain Games
+              </h3>
+            </div>
+          </div>
+          <div
+            class="card overflow-hidden bg-pureWhite w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80"
+          >
+            <div class="mb-3 md:mb-8 overflow-hidden">
+              <img
+                src="images/card-3.jpg"
+                alt=""
+                class="card-image ease-in-out duration-200"
+              />
+            </div>
+            <h3
+              class="text-red-500 font-bold text-base md:text-xl lg:text-2xl tracking-wider"
+            >
+              Get Competetive
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workshop">
+      <div class="reg-container bg-washedBlue text-pureWhite">
+        <h2 class="heading-secondary">Workshops</h2>
+
+        <!-- Flex  Content-->
+
+        <div
+          class="flex flex-col space-y-6 md:space-x-12 justify-center items-center md:flex-row md:justify-between"
+        >
+          <!-- Left Item -->
+          <div class="">
+            <img src="images/workshop-img.jpg" alt="" class="rounded-3xl" />
+          </div>
+
+          <!-- Right Item -->
+          <div class="flex-col flex space-y-6">
+            <p class="text-center mx-auto md:mx-0 md:text-left">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quisquam, veniam enim vitae quam aut omnis nobis voluptatem ipsam
+              laudantium ad ullam consectetur, itaque ratione distinctio
+              incidunt pariatur modi illo dolorem.
+              <br />
+              <br />
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+              maxime ipsum id?
+            </p>
+            <div
+              class="hover:text-cleanBlue text-pureWhite pt-8 mx-auto md:mx-0"
+            >
+              <button class="btn-secondary w-32 md:w-40">
+                <a
+                  href="#"
+                  class="font-semibold text-base md:text-xl tracking-wider"
+                  >Register Now</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="overflow-hidden">
+      <div
+        class="flex flex-col space-y-6 md:flex-row justify-between items-start md:items-center reg-container bg-pureWhite text-brandOrange"
+      >
+        <!-- Logo and Icons -->
+        <div class="flex flex-col space-y-0 items-center justify-center">
+          <span class="font-shrikh text-3xl md:text-5xl mb-8">Haven</span>
+          <div class="flex flex-row space-x-6">
+            <i class="fa-brands fa-instagram text-2xl md:text-4xl"></i>
+            <i class="fa-brands fa-facebook text-2xl md:text-4xl"></i>
+            <i class="fa-brands fa-twitter text-2xl md:text-4xl"></i>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+
+        <ul class="text-base md:text-2xl flex flex-col space-y-4">
+          <li>Haven Ltd.</li>
+          <li><a href="tel:+2551234567890"> Tel: +255 123456789</a></li>
+          <li><a href="mailto:haven@email.com">Email: haven@email.com </a></li>
+          <li>&copy; Copyright <span class="date"></span></li>
+        </ul>
+
+        <!-- Address -->
+        <!-- <ul class="text-base md:text-2xl flex flex-col space-y-4">
+          <li>Address Line 1</li>
+          <li>Address Line 2</li>
+          <li>P.O Box: 12340</li>
+          <li>Zanzibar, Tanzania</li>
+        </ul> -->
+        <div class="">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.325170272844!2d39.221817013756244!3d-6.220782695496837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cdbe6e132026b%3A0x3005cd9da9b07180!2sUwanja%20wa%20Ndege%20Zanzibar!5e0!3m2!1sen!2stz!4v1655402028849!5m2!1sen!2stz"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

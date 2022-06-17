@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .reg-container {
+    @apply py-12 px-12 mx-auto font-fred;
+  }
+
+  .heading-secondary {
+    @apply font-bold text-3xl md:text-4xl lg:text-6xl mb-20;
+  }
+
+  p {
+    @apply sm:text-sm md:text-base leading-relaxed lg:text-xl mr-12;
+  }
+}
+
+.btn-primary {
+  border: 1px solid #eee;
+  background-color: #eeeeee;
+  height: 50px;
+  border-radius: 29.5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  border: 3px solid #eee;
+}
+
+.btn-secondary {
+  border: 1px solid #0029ff;
+  background-color: #0029ff;
+  height: 50px;
+  border-radius: 29.5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #eee;
+  border: 3px solid #eee;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* height: 300px;
+  width: 300px; */
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid #444;
+}
+
+.card-image:hover {
+  transform: scale(2);
+}
+
+/* Hamburger Icon */
+
+.hamburger-tp,
+.hamburger-md,
+.hamburger-bt {
+  position: absolute;
+  right: 15%;
+  width: 24px;
+  height: 4px;
+  top: 7px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+.hamburger-tp {
+  transform: translateY(7px);
+}
+
+.hamburger-bt {
+  transform: translateY(-7px);
+}
+
+.open .hamburger-tp {
+  transform: rotate(45deg);
+  background-color: #f08c00;
+  z-index: 2;
+}
+
+.open .hamburger-md {
+  background-color: #f08c00;
+  opacity: 0;
+  z-index: 2;
+}
+
+.open .hamburger-bt {
+  transform: rotate(-45deg);
+  background-color: #f08c00;
+  z-index: 2;
+}
+
+.hamburger {
+  transition: all 3s ease-in-out;
+  width: 24px;
+}
+
+.hamburger-menu {
+  position: absolute;
+  right: -150px;
+  top: 0;
+  padding: 25px 50px;
+  color: #f08c00;
+  height: 300px;
+  width: 150px;
+  background-color: rgba(238, 238, 238, 0.829);
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.clicked {
+  right: 0;
+  opacity: 100%;
+}
