@@ -965,7 +965,7 @@ p {
 
 .hamburger-menu {
   position: absolute;
-  left: -150px;
+  right: 500px;
   top: 0;
   padding: 25px 50px;
   color: #f08c00;
@@ -977,7 +977,7 @@ p {
 }
 
 .clicked {
-  left: 170px;
+  right: 0;
   opacity: 100%;
 }
 
