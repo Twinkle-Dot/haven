@@ -103,18 +103,18 @@
 
 .hamburger-menu {
   position: absolute;
-  right: -150px;
+  left: -150px;
   top: 0;
   padding: 25px 50px;
   color: #f08c00;
   height: 300px;
   width: 150px;
   background-color: rgba(238, 238, 238, 0.829);
-  opacity: 0;
+  opacity: 100%;
   transition: all 500ms ease-in-out;
 }
 
 .clicked {
-  right: 0;
+  left: 170px;
   opacity: 100%;
 }
